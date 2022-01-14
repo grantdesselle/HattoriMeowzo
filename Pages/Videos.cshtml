@@ -1,0 +1,18 @@
+﻿@page
+@model CatToyWebApp.Pages.VideosModel
+
+<h1>Videos</h1>
+<div class="card-columns" style="padding:1em">
+    @foreach (var vid in Model.videosList)
+    {
+    <div class="card">
+        <a href="@vid">
+            <div class="embed-responsive embed-responsive-16by9">
+                <div class="card-body">
+                    <video src="@vid" controls style="padding:1em" class="embed-responsive-item" />
+                </div>
+            </div>
+        </a>
+    </div>
+    }
+</div>

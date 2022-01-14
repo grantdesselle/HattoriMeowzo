@@ -1,0 +1,18 @@
+﻿@page
+@model CatToyWebApp.Pages.PhotosModel
+
+<h1>Photos</h1>
+
+<div class="card-columns">
+    @foreach (var img in Model.imagesList)
+    {
+    <div class="card">
+        <a href="@img">
+            <div class="card-img">
+                <div class="card-body">
+                    <img src="@img" class="img-fluid" />
+                </div>
+            </div>
+        </a>
+    </div>}
+</div>
